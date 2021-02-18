@@ -25,11 +25,10 @@ class GitCommand {
             this.staging.push(modified_files[path_file]);
             delete modified_files[path_file];
         }
-        /*
-            For assignment #2:
-            Create logic here and run unit testing.
-            Don't forget to uncomment the unit tests.
-        */
+        else if(path_file == "."){
+            this.staging.push(modified_files);
+            this.working_directory.new_changes = {};
+        }
         else{
             return `Failed to add ${path_file}! File is not modified or missing.`;
         }
