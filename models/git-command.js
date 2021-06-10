@@ -12,7 +12,10 @@ class GitCommand {
     //Command: git status
     status(){        
         return 'You have 2 change/s.\nviews/index.html\nassets/scripts/index.js';
-       
+        /*
+            For assignment #1:
+            Create logic here and run unit testing.
+        */
     }
 
     //Command: git add <filename/file directory/wildcard> 
