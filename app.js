@@ -13,16 +13,16 @@ let git = new GitCommand(wd);
 git.init();
 
 //2. Check status
-console.log(git.status());
+console.log("\n" + git.status());
 
 //3. Add as index
-console.log(git.add("views/index.html"));
+git.add("views/index.html");
 
 //4. Check status
-console.log(git.status());
+console.log("\n" + git.status());
 
 //5. Commit
-console.log(git.commit("Added index.html file"));
+console.log("\n" + git.commit("Added index.html file"));
 
 //6. Push
-console.log(git.push());
+console.log("\n" + git.push());
