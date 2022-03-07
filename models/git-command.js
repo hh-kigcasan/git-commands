@@ -12,7 +12,6 @@ class GitCommand {
     //Command: git status
     status(){        
         /*
-            For assignment #1:
             Create logic here and run unit testing.
         */
     }
@@ -25,15 +24,6 @@ class GitCommand {
             this.staging.push(modified_files[path_file]);
             delete modified_files[path_file];
         }
-        /*
-            For assignment #2:
-            Create logic here and run unit testing.
-            Don't forget to uncomment the unit tests.
-        */
-        else{
-            return `Failed to add ${path_file}! File is not modified or missing.`;
-        }
-        return "Successfully added as index file/s.";
     }
 
     //Command: git commit -m "<message>"
