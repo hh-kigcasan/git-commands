@@ -24,5 +24,5 @@ console.log("\n" + git.status());
 //5. Commit
 console.log("\n" + git.commit("Added index.html file"));
 
-//6. Push
+//6. Push - Testing Jenkins
 console.log("\n" + git.push());
