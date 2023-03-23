@@ -14,6 +14,21 @@ class GitCommand {
         /*
             Create logic here and run unit testing.
         */
+        this.init();
+        for(let file of Object.keys(this.working_directory.files)){
+            this.add(file);
+        };
+        if(this.staging.length == 0){
+            return 'You have 0 change/s.\n';
+        }else{
+            console.log(this.staging)
+            let message =  `You have ${this.staging.length} change/s.`
+            for(let i=0; i<this.staging.length; i++){
+                message += `\n${this.staging[i].location}`+"/"+`${this.staging[i].name}`;
+            }
+            return message;
+        }
+
     }
 
     //Command: git add <filename/file directory/wildcard> 
