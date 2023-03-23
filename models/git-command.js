@@ -16,7 +16,7 @@ class GitCommand {
         */
         this.init();
         for(let file of Object.keys(this.working_directory.files)){
-            this.add(file); //Test workflow
+            this.add(file); //Test workflow #2
         };
         if(this.staging.length == 0){
             return 'You have 0 change/s.\n';
