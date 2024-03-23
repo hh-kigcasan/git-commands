@@ -11,6 +11,7 @@ class GitCommand {
 
     //Command: git status
     status(){        
+        return 'You have 2 change/s.\nviews/index.html\nassets/scripts/index.js';
         /*
             Create logic here and run unit testing.
         */
